@@ -1,0 +1,173 @@
+{
+  "main": {
+    "id": "288e374eec0d148d",
+    "type": "split",
+    "children": [
+      {
+        "id": "0d060c6929d02d24",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dd722eac246fcad6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Database/SQL/Multi-Table Queries.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "74f309766c9b91fe",
+    "type": "split",
+    "children": [
+      {
+        "id": "2c78a7d2693f8ab6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5fecc3f3e4c193af",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1845ba680f35a588",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5b597a4d95b15a0f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "0beeca315ab356c5",
+    "type": "split",
+    "children": [
+      {
+        "id": "2cf017e5f4f2f870",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "77364913f447a3a8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Database/SQL/Multi-Table Queries.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "57f71139045cb531",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Database/SQL/Multi-Table Queries.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "84562eb463b32115",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "282d4efec97d28a1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Database/SQL/Multi-Table Queries.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "switcher:Open quick switcher": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "dd722eac246fcad6",
+  "lastOpenFiles": [
+    "Database/SQL/Constraints and Filters.md",
+    "Database/SQL/Multi-Table Queries.md",
+    "Database/SQL/Basics.md",
+    "Untitled.canvas",
+    "2025-03-21.md",
+    "().md",
+    "Database/Untitled.md",
+    "Database/SQL",
+    "Database",
+    "API Call Structures",
+    "LeetCode/LeetCode/Reorder Routes to Make All Paths Lead to the City Zero.md",
+    "LeetCode/LeetCode/scripts/leetcode-quickadd.js",
+    "LeetCode/LeetCode/leetcode-quickadd.js",
+    "LeetCode/LeetCode/scripts",
+    "LeetCode/LeetCode/Untitled",
+    "LeetCode/LeetCode/Welcome.md",
+    "LeetCode/LeetCode",
+    "LeetCode/LC75/DFS",
+    "LeetCode/LC75",
+    "2024-09-21.md",
+    "API Call Structures/Python - Google Cloud Data Ingest.md"
+  ]
+}
