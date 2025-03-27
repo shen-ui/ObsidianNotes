@@ -1,3 +1,11 @@
+---
+tags:
+  - ORDERBY
+  - ASC
+  - DESC
+  - LIMIT
+  - OFFSET
+---
 *Tables naturally will populate and become very expensive to query. Reading rows will become near impossible if not horribly inefficient.* 
 
 ---
@@ -5,11 +13,16 @@
 
 A good way to add constraints to filter rows is the ==`WHERE`== clause. It applies to rows and checks for columns values to determine if the row shall be included within the query.
 
-`SELECT column, another_column, …`
-`FROM Table` 
-`WHERE condition` 
-`AND/OR anothercondition`
-`AND/OR …;`
+```SQL
+-- Query with WHERE
+
+SELECT column, another_column, …
+FROM Table
+WHERE condition
+AND/OR anothercondition
+AND/OR …;
+```
+
 
 > [!TLDR]
 > Complex clauses can be constructed by joining `WHERE` with numerous `AND` or `OR` keywords.
@@ -33,43 +46,44 @@ A good way to add constraints to filter rows is the ==`WHERE`== clause. It appli
 
 
 ---
-## *Filters*
+## *Filters* 
 
 Data in a database may be unique, but results of a query may not be. For example, a table of Pokémon cards may have multiple copies of [Pikachu's](https://www.tcgplayer.com/search/pokemon/product?productLineName=pokemon&q=pikachu&view=grid&ProductTypeName=Cards&page=1&CardType=Pokemon) varying across multiple sets of Pokémon cards. In such cases, SQL provides the keyword `DISTINCT` which provides a convenient way to discard rows
 
-`SELECT` ==DISTINCT== `column, another_column, … 
-`FROM mytable 
-`WHERE condition_one, condition_two, ...`
+```SQL
+--Query with DISTINCT
+
+SELECT DISTINCT column, another_column, … 
+FROM mytable
+WHERE condition_one, condition_two, ...
+```
+
 
 > [!NOTE]
 > `DISTINCT` will blindly remove duplicate rows and will not promise data that is explicitly singleton
 
 ---
-
 ## *Ordering*
 
 Most data that returns from a query generally are not sorted in a particular order. As a result, it's not particularly easy to read through queries especially when there may be thousands if not millions of rows. Because of this, SQL provides the keywords `ORDER BY` as a solution.
 
-`SELECT column_one, column_ two, ... `
-`FROM Table`
-`WHERE condition_one, condition_two, ... `
-==ORDER BY== `column` ==ASC/DESC==`;`
-
-| Keyword | Description                | Example                                                     |
-| ------- | -------------------------- | ----------------------------------------------------------- |
-| `ASC`   | Order by ascending values  | `SELECT` *column* `FROM` *Table* `ORDER BY` *column* `ASC`  |
-| `DESC`  | Order by descending values | `SELECT` *column* `FROM` *Table* `ORDER BY` *column* `DESC` |
-
 There are also multiple other clauses to not only order, but also `LIMIT` and `OFFSET` which are used to optimize queries even further.
 
-`SELECT column_one, column_ two, ... `
-`FROM Table`
-`WHERE condition_one, condition_two, ... `
-`ORDER BY column` ==ASC/DESC==`;`
 
-| Keyword  | Description                                          | Example                                                |
-| -------- | ---------------------------------------------------- | ------------------------------------------------------ |
-| `LIMIT`  | reduce the number of rows returned                   | `SELECT` *column* `FROM` *Table* `LIMIT` *num_limit*   |
-| `OFFSET` | Specify where to begin counting the number rows from | `SELECT` *column* `FROM` *Table* `OFFSET` *num_offset* |
+```SQL
+--Ordering by ASC/DESC
+
+SELECT column_one, column_ two, ...
+FROM Table
+WHERE condition_one, condition_two, ... 
+ORDER BY column ASC/DESC;
+```
+
+| Keyword  | Description                                          | Example                                                     |
+| -------- | ---------------------------------------------------- | ----------------------------------------------------------- |
+| `LIMIT`  | reduce the number of rows returned                   | `SELECT` *column* `FROM` *table* `LIMIT` *num_limit*        |
+| `OFFSET` | Specify where to begin counting the number rows from | `SELECT` *column* `FROM` *table* `OFFSET` *num_offset*      |
+| `ASC`    | Order by ascending values                            | `SELECT` *column* `FROM` *Table* `ORDER BY` *column* `ASC`  |
+| `DESC`   | Order by descending values                           | `SELECT` *column* `FROM` *Table* `ORDER BY` *column* `DESC` |
 Using these keywords are essential for API's. Think of [infinite scroll](https://htmx.org/examples/infinite-scroll/) technique that is used by [Reddit](www.reddit.com) or any content driven website. Because of this, it's essential to be comfortable with these keywords.
 
