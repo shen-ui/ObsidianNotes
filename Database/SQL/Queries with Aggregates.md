@@ -39,3 +39,17 @@ WHERE constraint_expression
 GROUP BY column;
 ```
 
+One may notice that if the `GROUP BY` clause is executed after the WHERE clause, how does one filter grouped rows? To answer this need, SQL provides the `HAVING` clause which is used specifically with `GROUP BY` to allow filtering grouped rows from a resulting set.
+
+```SQL
+-- Query with HAVING constraing
+
+SELECT grouped_columns, AGG_FUNC(column_expression) AS aggregate_result_alias, ...
+FROM Table
+WHERE condition
+GROUP BY column
+HAVING group_condition;
+
+```
+
+The `HAVING` clause is written the same way as the `WHERE` clause and are applied to group rows. If you imagine data with millions of rows and properties, being able to apply additional constraints is often necessary to make sense of data.
