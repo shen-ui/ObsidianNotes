@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Database/SQL/Queries with Aggregates.md",
+                "file": "Database/SQL/Basics/L18 - Dropping Tables.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Queries with Aggregates"
+              "title": "L18 - Dropping Tables"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 330.5
   },
   "right": {
     "id": "0beeca315ab356c5",
@@ -168,15 +168,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7a8160820df8e8df",
+  "active": "5fecc3f3e4c193af",
   "lastOpenFiles": [
+    "Database/SQL/Topics",
+    "Database/SQL/Basics",
+    "Database/SQL/Basics/L17 - Altering Tables.md",
+    "Database/SQL/Basics/L18 - Dropping Tables.md",
+    "Database/SQL/Basics/L16 - Creating Tables.md",
+    "Database/SQL/Basics/L9 - Queries with Expressions.md",
     "Database/SQL/Queries with Expressiosn.md",
-    "Database/SQL/Untitled.md",
-    "Database/SQL/Queries with Aggregates.md",
-    "Database/SQL/Null Type.md",
-    "Database/SQL/Constraints and Filters.md",
-    "Database/SQL/Basics.md",
-    "Database/SQL/Multi-Table Queries.md",
+    "Database/SQL/Basics/L10 & L11 - Queries with Aggregates.md",
+    "Database/SQL/Basics/L12 - Order of Execution of a Query.md",
+    "Database/SQL/Basics/L2 & L3 - Constraints and Filters.md",
+    "Database/SQL/Basics/L1 - Select Queries.md",
+    "Database/SQL/Basics/L6 - Multi-Table Queries.md",
+    "Database/SQL/Basics/L8 - Null Type.md",
+    "Database/SQL/Basics/L13 - Inserting Rows.md",
+    "Database/SQL/Basics/L14 - Updating Rows.md",
+    "Database/SQL/Basics/L15 - Deleting Rows.md",
     "!Example.md",
     "!NOTE.md",
     "!EXAMPLE.md",
@@ -196,7 +205,6 @@
     "LeetCode/LeetCode/Untitled",
     "LeetCode/LeetCode/Welcome.md",
     "LeetCode/LeetCode",
-    "LeetCode/LC75/DFS",
     "2024-09-21.md",
     "API Call Structures/Python - Google Cloud Data Ingest.md"
   ]
